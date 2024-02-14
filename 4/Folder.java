@@ -53,10 +53,12 @@ public class Folder extends File {
 		Set<String> currentFiles = new HashSet<>();
 		currentFiles.addAll(currentDirectory.getFiles().keySet());
 		currentFiles.addAll(currentDirectory.getSubfolders().keySet());
-		System.out.println(currentDirectory.getName()+":\n"+currentFiles+"\n");
-		Collection<Folder> currentFolders = currentDirectory.getSubfolders().values();
-		for (Folder folder : currentFolders) {
-			recursiveList(folder);
+		if (currentFiles.size() > 0) {
+			System.out.println(currentDirectory.getName()+":\n"+currentFiles+"\n");
+			Collection<Folder> currentFolders = currentDirectory.getSubfolders().values();
+			for (Folder folder : currentFolders) {
+				recursiveList(folder);
+			}
 		}
 	}
 }
