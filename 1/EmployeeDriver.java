@@ -40,7 +40,7 @@ public class EmployeeDriver {
 			current.setLastName(scnr.next());
 			current.setSocialSecurityNumber(scnr.next());
 		}
-		System.out.println(joe.getFirstName()+" "+joe.getLastName()+" ("
-		+joe.getSocialSecurityNumber()+") earns "+joe.getWeeklySalary());
+		for (Employee employee :employees)
+			System.out.println(employee.getFirstName()+" "+employee.getLastName()+" ("+employee.getSocialSecurityNumber()+") : "+employee.getIncome());
 	}
 }

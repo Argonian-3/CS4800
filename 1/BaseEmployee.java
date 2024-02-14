@@ -9,4 +9,7 @@ public class BaseEmployee extends Employee {
 	public void setBaseSalary(int newBaseSalary) {
 		baseSalary = newBaseSalary;
 	}
+	public String getIncome() {
+		return baseSalary+"";
+	}
 }

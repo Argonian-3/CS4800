@@ -17,4 +17,7 @@ public class CommissionEmployee extends Employee {
 	public void setGrossSales(int newGrossSales) {
 		grossSales = newGrossSales;
 	}
+	public String getIncome() {
+		return commissionRate+","+grossSales;
+	}
 }

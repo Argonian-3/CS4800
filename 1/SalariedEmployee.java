@@ -10,4 +10,7 @@ public class SalariedEmployee extends Employee {
 	public void setWeeklySalary(int newWeeklySalary) {
 		weeklySalary = newWeeklySalary;
 	}
+	public String getIncome() {
+		return weeklySalary+"";
+	}
 }

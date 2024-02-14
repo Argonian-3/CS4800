@@ -17,4 +17,7 @@ public class HourlyEmployee extends Employee {
 	public void setHoursWorked(int newHoursWorked) {
 		hoursWorked = newHoursWorked;
 	}
+	public String getIncome() {
+		return wage+"";
+	}
 }

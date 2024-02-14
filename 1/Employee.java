@@ -25,4 +25,7 @@ public class Employee {
 	public void setSocialSecurityNumber(String newSocialSecurityNumber) {
 		socialSecurityNumber = newSocialSecurityNumber;
 	}
+	public String getIncome() {
+		throw new UnsupportedOperationException();
+	}
 }
