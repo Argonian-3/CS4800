@@ -5,8 +5,8 @@ class ProteinFactory extends FoodFactory {
 			instance = new ProteinFactory();
 		return instance;
 	}
-	private ProteinFactory() {
+	public Food[] getMacronutrient() {
 		Food[] proteins = {Food.fish,Food.chicken,Food.beef,Food.tofu};
-		foods = proteins;
+		return proteins;
 	}
 }

@@ -5,8 +5,8 @@ class FatFactory extends FoodFactory {
 			instance=new FatFactory();
 		return instance;
 	}
-	private FatFactory() {
+	public Food[] getMacronutrient() {
 		Food[] fats = {Food.avocado, Food.sour_cream, Food.tuna, Food.peanuts};
-		foods=fats;
+		return fats;
 	}
 }
